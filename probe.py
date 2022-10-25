@@ -1,15 +1,27 @@
-# Задача 1
-# Есть строка с перечислением песен
 
-# my_favorite_songs = 'Waste a Moment, Staying\' Alive, A Sorta Fairytale, Start Me Up, New Salvation'
-# Выведите на консоль с помощью индексации строки, последовательно: первый трек, последний, второй, второй с конца
-# Нельзя переопределять my_favorite_songs и запятая не должна выводиться.
-
-my_favorite_songs = 'Waste a Moment, Staying\' Alive, A Sorta Fairytale, Start Me Up, New Salvation'
-
-z = my_favorite_songs.split(',')
-
-print(z [0],z[-1],z[2],z[-2])
+from audioop import add
+import random
+my_favorite_songs = [
+    ['Waste a Moment', 3.03],
+    ['New Salvation', 4.02],
+    ['Staying\' Alive', 3.40],
+    ['Out of Touch', 3.03],
+    ['A Sorta Fairytale', 5.28],
+    ['Easy', 4.15],
+    ['Beautiful Day', 4.04],
+    ['Nowhere to Run', 2.58],
+    ['In This World', 4.02],
+]
+my_list=[]
+for i in range(3):
+    my_list.append(random.choice(my_favorite_songs)) 
+k = 0
+for name,time in my_list:
+    
+    k+=time
+print(my_list)   
+print(k)
+           
 
 
 
