@@ -6,6 +6,8 @@
 # Для того, чтобы задавать случайные значения, используйсте модуль random
 # import random 
 
+from audioop import add
+import random
 my_favorite_songs = [
     ['Waste a Moment', 3.03],
     ['New Salvation', 4.02],
@@ -17,3 +19,12 @@ my_favorite_songs = [
     ['Nowhere to Run', 2.58],
     ['In This World', 4.02],
 ]
+my_list=[]
+for i in range(3):
+    my_list.append(random.choice(my_favorite_songs)) 
+k = 0
+for name,time in my_list:
+    
+    k+=time
+print(my_list)   
+print('Три песни звучат',(k), 'минут')
