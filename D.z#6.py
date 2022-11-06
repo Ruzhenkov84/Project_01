@@ -2,7 +2,7 @@
 # Есть словарь песен 
 # Распечатайте общее время звучания трех случайных песен
 # Вывод: Три песни звучат ХХХ минут.
-from audioop import add
+
 import random
 
 my_favorite_songs = {
@@ -24,6 +24,3 @@ for name,time in song:
     k+=time
 print(song)   
 print('Три песни звучат',(k), 'минут')
-
-
-

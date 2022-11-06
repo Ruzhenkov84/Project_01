@@ -1,23 +1,21 @@
-# Задача 5
-# Зарплата сотрудника составляет salary руб., 
-# Расходы на проживание превышают зараплату и составляют expenses руб. в месяц. 
-# Рост цен ежемесячно увеличивает расходы на 3%, кроме первого месяца
-# Напишите скрипт расчета суммы денег, которую необходимо взять в долг, 
-# чтобы можно было прожить ближайший год (12 месяцев).
-# Формат вывода:
-# Необходимо взять в долг ХХХ.ХХ рублей
-print("Hello")
-salary=float(input("Введите сумму заработной платы в месяц "))   
-s = salary*12
-expenses=float(input("Введите расходы на проживание в месяц "))
-z = expenses*12
-h = (s-z) 
+n = 5
+arr =[] 
+for i in range(n):
+    arr.append(randint(1,1000))
+for i in range(n-1):
+    for k in range(n-1):
+        if arr[k]>arr[k+1]:
+            arr[k],arr[k+1]=arr[k+1],arr[k]
+print("min = ",arr[1]) 
 
-if (h<0): 
-    h=-h     
-    procent = h/33*100   
-    k = h-procent       
-    print("необходимо взять в долг ",(k),"рублей") 
-    print("Занимать не нужно")
+print("max = ",arr [n-1])
 
+song=[]
+for i in range(3):
+    song.append(random.choice(list(my_favorite_songs)))
+print(song)
+k=0
+for name,time in song:
+    k+=time
+    print(sum(k))
 
