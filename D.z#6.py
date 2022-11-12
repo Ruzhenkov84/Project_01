@@ -24,3 +24,5 @@ for name,time in song:
     k+=time
 print(song)   
 print('Три песни звучат',(k), 'минут')
+
+# Отлично
