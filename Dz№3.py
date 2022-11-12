@@ -18,3 +18,14 @@ elif month in [1,3,5,7,8,10,12]:
     
 else:
     print("Номер месяца не корректен")
+
+#     Можно еще так
+# Решение 2
+import calendar as cl  # используем модуль для получения функции
+
+year_input = input("Введите год: ")
+month_input = input("Введите номер месяца: ")
+
+year = int(year_input)
+month_ = int(month_input)
+print(cl.monthrange(year, month_))
