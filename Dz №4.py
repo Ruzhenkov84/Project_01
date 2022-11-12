@@ -28,3 +28,5 @@ for name,time in my_list:
     k+=time
 print(my_list)   
 print('Три песни звучат',(k), 'минут')
+
+# Отлично
